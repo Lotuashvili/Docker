@@ -1,0 +1,13 @@
+version: "2"
+
+options:
+  verbose: false
+syncs:
+  docker-sync:
+    notify_terminal: true
+    src: '/Users/gwsmaster/Sites'
+    dest: '/www'
+    sync_userid: '82'
+    sync_excludes: ['node_modules', '.git', '.gitignore', '.DS_Store', '.unison*']
+    sync_args:
+      - "-ignore='Path vendor/*'"

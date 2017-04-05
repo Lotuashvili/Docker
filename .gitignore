@@ -1,0 +1,3 @@
+mysql/data
+nginx/sites/*
+!nginx/sites/example.conf

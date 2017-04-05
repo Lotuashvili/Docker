@@ -1,0 +1,19 @@
+#
+version: '2'
+#
+services:
+  #
+  php5-fpm:
+    volumes:
+      - docker-sync:/www:rw
+  php7-fpm:
+    volumes:
+      - docker-sync:/www:rw
+  #
+  nginx:
+    volumes:
+      - docker-sync:/www:rw
+#
+volumes:
+  docker-sync:
+    external: true
