@@ -27,4 +27,8 @@ Change root password in `docker-compose.yml` file, in mysql section. See environ
 
 Change folder (`/Users/gwsmaster/Sites`) with your path of projects in `docker-compose.yml` and `docker-sync.yml`
 
+#### Running docker
+
 To build, run and daemonize, you can simply run this command in this folder `docker-compose up -d --build`
+
+Restart machine: `docker-compose down && docker-compose up -d` (run with --build argument if you changed php's Dockerfile)
