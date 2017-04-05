@@ -11,6 +11,10 @@ Global docker container to run your Laravel apps: MySQL/Nginx/PHP
 
 ### How to use
 
+#### Clone
+
+Clone this repo somewhere in safe place. This will be your global configuration. For example: `cd ~/ && git clone https://github.com/Lotuashvili/Docker.git`
+
 #### Install docker-sync
 
 To install docker-sync, run `gem install docker-sync`, or visit [docker-sync.io](http://docker-sync.io/).
