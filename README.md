@@ -2,6 +2,8 @@
 
 Global docker container to run your Laravel apps: MySQL/Nginx/PHP
 
+![Laravel & Docker](https://cloud.githubusercontent.com/assets/6238393/24731434/06790214-1a7b-11e7-87d7-f7c0aa71be17.png)
+
 ### Includes
 
 + Mysql 5.7
