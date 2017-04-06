@@ -1,0 +1,11 @@
+# COPY THIS FILE TO {sitename}.conf
+# To use php5 instead of php7, replace 'set $upstream php7' with 'set $upstream php5'
+
+server {
+    listen       80;
+    server_name  example.dev;
+    root         /www/example/public;
+
+    set $upstream php7;
+    include /etc/nginx/nginx-php-common.conf;
+}
