@@ -13,6 +13,7 @@ services:
       TIMEZONE: 'Asia/Tbilisi'
     volumes:
       - ./mysql/data:/var/lib/mysql
+      - ./mysql/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
   #
   php5-fpm:
     build: ./PHP/php5-fpm
