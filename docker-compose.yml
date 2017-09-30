@@ -19,12 +19,12 @@ services:
     build: ./PHP/php5-fpm
     restart: always
     volumes:
-      - /Users/gwsmaster/Sites:/www
+      - /Users/lotuashvili/Sites:/www
   php7-fpm:
     build: ./PHP/php7-fpm
     restart: always
     volumes:
-      - /Users/gwsmaster/Sites:/www
+      - /Users/lotuashvili/Sites:/www
   #
   nginx:
     image: nginx:latest
@@ -35,4 +35,4 @@ services:
       - ./Nginx/sites:/etc/nginx/sites
       - ./Nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./Nginx/nginx-php-common.conf:/etc/nginx/nginx-php-common.conf
-      - /Users/gwsmaster/Sites:/www
+      - /Users/lotuashvili/Sites:/www

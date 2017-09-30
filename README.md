@@ -33,6 +33,24 @@ Change root password in `docker-compose.yml` file, in mysql section. See environ
 
 Change folder (`/Users/gwsmaster/Sites`) with your path of projects in `docker-compose.yml` and `docker-sync.yml`
 
+#### Artisan (For Laravel Users)
+
+To run artisan in docker container, run only once this command `docker build -t artisan PHP/Artisan` and then add alias in your bash environment
+
+```
+alias artisan='docker  run -it --rm --network=docker_default -v "$(pwd)":/app artisan'
+```
+
+Network parameter can be different.
+
+#### Composer
+
+To run composer inside docker container, add alias to your bash environment
+
+```
+alias composer='docker run -it --rm -v "$(pwd)":/app composer/composer:1.1-alpine'
+```
+
 #### Running docker
 
 To build, run and daemonize, you can simply run this command in this folder `docker-compose up -d --build`
