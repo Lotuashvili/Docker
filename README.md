@@ -31,7 +31,7 @@ Change root password in `docker-compose.yml` file, in mysql section. See environ
 
 #### Shared folders
 
-Change folder (`/Users/gwsmaster/Sites`) with your path of projects in `docker-compose.yml` and `docker-sync.yml`
+Change folder (`/Users/lotuashvili/Sites`) with your path of projects in `docker-compose.yml` and `docker-sync.yml`
 
 #### Artisan (For Laravel Users)
 
