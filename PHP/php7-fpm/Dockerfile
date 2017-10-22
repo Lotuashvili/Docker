@@ -6,6 +6,6 @@ RUN apk add --no-cache \
         --with-freetype-dir=/usr/include/ \
         --with-png-dir=/usr/include/ \
         --with-jpeg-dir=/usr/include/ && \
-    docker-php-ext-install gd mcrypt mysqli pdo_mysql && \
+    docker-php-ext-install gd mcrypt mysqli pdo_mysql zip && \
     apk del --no-cache \
         freetype-dev libpng-dev libjpeg-turbo-dev libmcrypt-dev
