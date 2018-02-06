@@ -25,6 +25,10 @@ services:
     restart: always
     volumes:
       - /Users/lotuashvili/Sites:/www
+    extra_hosts:
+      - 'bioli.local:172.18.0.4'
+      - 'api.bioli.local:172.18.0.4'
+      - 'bioli.web:172.18.0.4'
   #
   nginx:
     image: nginx:latest
@@ -36,13 +40,18 @@ services:
       - ./Nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./Nginx/nginx-php-common.conf:/etc/nginx/nginx-php-common.conf
       - /Users/lotuashvili/Sites:/www
+    extra_hosts:
+      - 'bioli.local:172.18.0.4'
+      - 'api.bioli.local:172.18.0.4'
+      - 'bioli.web:172.18.0.4'
   #
   redis:
     image: redis:latest
     ports:
       - "6379:6379"
     volumes:
-      - ./redis:/var/lib/redis
+      - ./redis/lib:/var/lib/redis
+      - ./redis/data:/data
     restart: always
     command: >
       --requirepass secret

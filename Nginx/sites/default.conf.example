@@ -3,7 +3,7 @@
 
 server {
     listen       80;
-    server_name  example.dev;
+    server_name  example.local;
     root         /www/example/public;
 
     set $upstream php7;
