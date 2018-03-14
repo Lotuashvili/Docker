@@ -8,6 +8,8 @@ Global docker container to run your Laravel apps: MySQL/Nginx/PHP
 
 + Mysql 5.7
 + Nginx
++ PHP 7.2 FPM
++ PHP 7.1 FPM
 + PHP 7.0 FPM
 + PHP 5.6 FPM
 + Redis
