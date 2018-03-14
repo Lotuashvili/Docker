@@ -9,6 +9,12 @@ services:
   php7-fpm:
     volumes:
       - docker-sync:/www:rw
+  php71-fpm:
+    volumes:
+      - docker-sync:/www:rw
+  php72-fpm:
+    volumes:
+      - docker-sync:/www:rw
   #
   nginx:
     volumes:

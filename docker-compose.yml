@@ -26,9 +26,19 @@ services:
     volumes:
       - /Users/lotuashvili/Sites:/www
     extra_hosts:
-      - 'bioli.local:172.18.0.4'
-      - 'api.bioli.local:172.18.0.4'
-      - 'bioli.web:172.18.0.4'
+      - 'bioli.local:172.18.0.5'
+      - 'api.bioli.local:172.18.0.5'
+      - 'bioli.web:172.18.0.5'
+  php71-fpm:
+    build: ./PHP/php71-fpm
+    restart: always
+    volumes:
+      - /Users/lotuashvili/Sites:/www
+  php72-fpm:
+    build: ./PHP/php72-fpm
+    restart: always
+    volumes:
+      - /Users/lotuashvili/Sites:/www
   #
   nginx:
     image: nginx:latest
